@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2748948257238188713}
   - component: {fileID: 3555795653795089259}
   - component: {fileID: 5163223831713041060}
+  - component: {fileID: 5604846775270013933}
   m_Layer: 0
   m_Name: Shell
   m_TagString: Untagged
@@ -158,6 +159,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.25275043, y: 0.23468368, z: 0.34012416}
   m_Center: {x: 0.0090369005, y: -0.032011956, z: 0.13153464}
+--- !u!114 &5604846775270013933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944806207435054284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c61aa260edd2054cacfd8302dec954d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  returnPool: {fileID: 0}
+  returnTime: 3
+  hitEffetPrefap: {fileID: 195792, guid: 89e78efe92dfe5a42837b392cdb0bf9e, type: 3}
+  rigid: {fileID: 2748948257238188713}
 --- !u!1 &8518747981094977601
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,8 +184,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3107165988177883660}
+  - component: {fileID: 2235106457973161230}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: HitBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -189,3 +207,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5480068466383855390}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2235106457973161230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8518747981094977601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c61aa260edd2054cacfd8302dec954d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  returnPool: {fileID: 0}
+  returnTime: 0
+  hitEffetPrefap: {fileID: 0}
+  rigid: {fileID: 0}

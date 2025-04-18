@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.GlobalIllumination;
 
-public class Spawner : MonoBehaviour
+public class SpawnerTest : MonoBehaviour
 {
     public GameObject prefab;
 

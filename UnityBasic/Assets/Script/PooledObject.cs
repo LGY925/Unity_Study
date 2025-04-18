@@ -8,17 +8,28 @@ public class PooledObject : MonoBehaviour
     [SerializeField] float returnTime;
     private float timer;
 
+    [Header("Propertis")]
+    [SerializeField] GameObject hitEffetPrefap;
+
+   
+
     private void OnEnable()
     {
         timer = returnTime;
     }
-    public void Update()
+    private void Update()
     {
         timer -= Time.deltaTime;
         if (timer < 0)
         {
             ReturnPool();
         }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        ReturnPool();
+        Instantiate(hitEffetPrefap,transform.position,transform.rotation);
     }
     public void ReturnPool()
     {

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Prefab : MonoBehaviour
+public class _Prefab : MonoBehaviour
 {
     /****************************************************************\
      * ÇÁ¸®ÆÕ (Prefab)
